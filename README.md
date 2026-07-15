@@ -110,7 +110,7 @@ AIVOA-CRM/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/RepAssist-AI.git
+git clone https://github.com/MD0516/RepAssist-AI.git
 cd RepAssist-AI
 ```
 
