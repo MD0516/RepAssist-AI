@@ -5,13 +5,11 @@ from app.api.chat import router as chatRouter
 from app.api.interactions import (
     router as interactionRouter
 )
-from app.db.database import engine
-from app.db.base import Base
 
 app = FastAPI(
     title="AI First CRM API"
 )
-# Base.metadata.create_all(bind=engine)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[

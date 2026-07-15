@@ -84,6 +84,7 @@ AIVOA-CRM/
 │   │   ├── services/      # Groq LLM service, interaction service
 │   │   └── tools/         # the 5 LangGraph tools
 │   ├── main.py
+│   ├── create_tables.py
 │   ├── requirements.txt
 │   └── .env.example
 ├── frontend/
@@ -129,6 +130,12 @@ Copy `.env.example` to `.env` and fill in your values:
 GROQ_API_KEY=your_groq_api_key_here
 DATABASE_URL=postgresql://user:password@localhost:5432/aivoa_crm
 ```
+
+**First run only:** create the database tables by running the setup script:
+```bash
+python create_tables.py
+```
+This only needs to be run once, before starting the server for the first time.
 
 Run the backend:
 ```bash
